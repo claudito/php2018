@@ -9,19 +9,10 @@ $hora       =  $_POST['hora'];
 $fecha      =  $_POST['fecha'];
 $comentario =  $_POST['comentario'];
 
-echo $nombres;
-echo "<br>";
-echo $apellidos;
-echo "<br>";
-echo $dni;
-echo "<br>";
-echo $hora;
-echo "<br>";
-echo $fecha;
-echo "<br>";
-echo $comentario;
 
+$data = Registro::agregar($nombres,$apellidos,$dni,$hora,$fecha,$comentario);
 
+echo $data;
 
 
 

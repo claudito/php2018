@@ -1,13 +1,7 @@
+
 <?php 
-
-include'config.php';
-spl_autoload_register(function ($clase){
-$ruta = "modelo/".$clase.".php";
-include($ruta);
-});
-
-
-
-
-
+ define("SERVER", "192.168.1.15");
+ define("USER", "root");
+ define("PASS", "perutec");
+ define("BD", "test");
  ?>
