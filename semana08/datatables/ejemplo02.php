@@ -5,6 +5,8 @@
 	<meta charset="UTF-8">
 	<title>Ejemplo 02</title>
 
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 
 <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
@@ -25,6 +27,8 @@
 <div class="col-md-12">
 	
 <?php if (  count(Paciente::lista()) >0): ?>
+
+<div class="table-responsive">
 <table class="table table-condensed" id="consulta">
 <thead>
 <tr>
@@ -49,9 +53,8 @@
 </tr>
 <?php endforeach ?>
 </tbody>
-
-
 </table>
+</div>
 
 <?php else: ?>
 <p>No existe registros disponibles.</p>	
